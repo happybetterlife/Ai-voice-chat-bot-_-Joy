@@ -1,0 +1,60 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+*.egg-info/
+
+# Node
+node_modules/
+npm-debug.log*
+
+# Environment variables
+.env
+.env.local
+frontend/.env.local
+*.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Firebase
+.firebase/
+firebase-debug.log
+
+# Database
+*.db
+*.sqlite
+
+# Logs
+logs/
+*.log
+
+# Build outputs
+frontend/dist/
+frontend/build/
+.vite/
+
+# Data directories
+data/indexes/*
+!data/indexes/default/
+data/voice_samples/*
+data/persona/*
+
+# Docker
+*.pid
+
+# Test
+.coverage
+*.cover
+
+# pyc
+*.pyc

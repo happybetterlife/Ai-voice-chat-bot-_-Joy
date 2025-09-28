@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "voice-chatbot-8f3a1"
+  },
+  "targets": {
+    "voice-chatbot-8f3a1": {
+      "hosting": {
+        "voice-agent": [
+          "voice-chatbot-8f3a1"
+        ]
+      }
+    }
+  }
+}
