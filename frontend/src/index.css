@@ -1,22 +1,21 @@
-/* RealAvatar.ai inspired design */
+/* RealAvatar.ai inspired design - Clean and Modern */
 :root {
-  --primary-color: #6366f1;
-  --primary-dark: #4f46e5;
-  --secondary-color: #8b5cf6;
-  --accent-color: #06b6d4;
-  --text-primary: #1f2937;
-  --text-secondary: #6b7280;
-  --text-muted: #9ca3af;
+  --primary-color: #000000;
+  --secondary-color: #666666;
+  --accent-color: #0066cc;
+  --text-primary: #000000;
+  --text-secondary: #666666;
+  --text-light: #999999;
   --bg-primary: #ffffff;
-  --bg-secondary: #f9fafb;
-  --bg-accent: #f3f4f6;
-  --border-color: #e5e7eb;
-  --success-color: #10b981;
-  --error-color: #ef4444;
-  --warning-color: #f59e0b;
+  --bg-secondary: #f8f9fa;
+  --bg-accent: #f1f3f4;
+  --border-color: #e0e0e0;
+  --border-light: #f0f0f0;
+  --success-color: #28a745;
+  --error-color: #dc3545;
   
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  line-height: 1.6;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.5;
   font-weight: 400;
   color: var(--text-primary);
   background-color: var(--bg-primary);
@@ -36,7 +35,8 @@
 body {
   margin: 0;
   min-height: 100vh;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
 }
 
 a {
@@ -46,20 +46,20 @@ a {
 }
 
 a:hover {
-  color: var(--primary-dark);
+  color: var(--secondary-color);
 }
 
 button {
   font-family: inherit;
   cursor: pointer;
   border: none;
-  border-radius: 8px;
+  border-radius: 6px;
   transition: all 0.2s ease;
   font-weight: 500;
 }
 
 button:focus-visible {
-  outline: 2px solid var(--primary-color);
+  outline: 2px solid var(--accent-color);
   outline-offset: 2px;
 }
 
@@ -68,64 +68,53 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   line-height: 1.2;
   color: var(--text-primary);
+  margin-bottom: 0.5rem;
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: 700;
+  line-height: 1.1;
 }
 
 h2 {
-  font-size: 2.25rem;
+  font-size: 2.5rem;
+  font-weight: 600;
 }
 
 h3 {
-  font-size: 1.875rem;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
 p {
   color: var(--text-secondary);
   line-height: 1.6;
+  margin-bottom: 1rem;
 }
 
 /* Utility classes */
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0 2rem;
 }
 
 .text-center {
   text-align: center;
 }
 
-.mb-4 {
-  margin-bottom: 1rem;
-}
-
-.mb-6 {
-  margin-bottom: 1.5rem;
-}
-
-.mb-8 {
-  margin-bottom: 2rem;
-}
-
-.mt-8 {
-  margin-top: 2rem;
-}
-
 /* Responsive design */
 @media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+  }
+  
   h1 {
-    font-size: 2.25rem;
+    font-size: 2.5rem;
   }
   
   h2 {
-    font-size: 1.875rem;
-  }
-  
-  .container {
-    padding: 0 0.75rem;
+    font-size: 2rem;
   }
 }
